@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himachal Pradesh Travel — Explore the Mountains</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="/">⛰️ HP Travel</a>
+    <ul>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Explore <span>Himachal Pradesh</span></h1>
+    <p>Discover breathtaking mountains, valleys, and adventures</p>
+    <div class="search-bar">
+      <input id="search-input" type="text" placeholder="Search destinations, activities..." />
+      <button id="search-btn">Search</button>
+    </div>
+  </section>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="hill-station">Hill Stations</button>
+    <button class="filter-btn" data-filter="adventure">Adventure</button>
+    <button class="filter-btn" data-filter="religious">Religious</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="heritage">Heritage</button>
+  </div>
+
+  <section class="section" id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="cards-grid" id="destinations-grid">
+      <p class="loading">Loading...</p>
+    </div>
+  </section>
+
+  <section class="section" id="activities">
+    <h2>Top Activities</h2>
+    <div class="cards-grid" id="activities-grid">
+      <p class="loading">Loading...</p>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Himachal Pradesh</h2>
+    <p style="max-width:700px;line-height:1.8;color:#555">
+      Himachal Pradesh, nestled in the western Himalayas, is one of India's most scenic states.
+      From the snow-capped peaks of Spiti to the lush valleys of Kullu-Manali, it offers
+      something for every traveller — trekking, skiing, paragliding, temple visits, and more.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 HP Travel &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; <a href="#">Contact</a></p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
