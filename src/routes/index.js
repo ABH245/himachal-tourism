@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const destinationController = require('../controllers/destinationController');
 const activityController = require('../controllers/activityController');
+const chatController = require('../controllers/chatController');
 
 const router = Router();
 
@@ -13,6 +14,9 @@ router.post('/destinations', destinationController.create);
 router.get('/activities', activityController.getAll);
 router.get('/activities/:id', activityController.getById);
 router.post('/activities', activityController.create);
+
+// Chat route
+router.post('/chat', chatController.chat);
 
 // 404 catch-all for unmatched API routes
 router.use((req, res) => {

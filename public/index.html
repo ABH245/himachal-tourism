@@ -62,6 +62,23 @@
     <p>© 2026 HP Travel &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; <a href="#">Contact</a></p>
   </footer>
 
+  <!-- Chatbox -->
+  <button class="chat-toggle" id="chat-toggle" title="Chat with us">💬</button>
+  <div class="chat-window hidden" id="chat-window">
+    <div class="chat-header">
+      <div>⛰️ HP Travel Assistant</div>
+      <span id="chat-close" style="cursor:pointer">✕</span>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-msg bot">Namaste! 🙏 Ask me anything about Himachal Pradesh — destinations, trekking, skiing, food, budget and more!</div>
+    </div>
+    <div class="chat-input-row">
+      <input id="chat-input" type="text" placeholder="Ask something..." />
+      <button id="chat-send">Send</button>
+    </div>
+  </div>
+
   <script src="/js/main.js"></script>
+  <script src="/js/chat.js"></script>
 </body>
 </html>
